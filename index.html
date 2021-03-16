@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/lifebuoy.svg">
+
+    <title>.es3</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+            
+    <!-- Custom styles for this template -->
+    <link href="css/es3.css" rel="stylesheet">
+    <link href="css/cookie.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SR7306WP4J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SR7306WP4J');
+    </script>
+
+    <!-- script data-ad-client="ca-pub-8322859158070539" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script -->
+
+  </head>
+
+  <body class="bg-light">
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <img src="img/lifebuoy.svg" width="30" style="margin-right: 10px;"/>
+      <a class="navbar-brand" href="#"><b>.es3</b><small>.hu</small></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsES3Default" aria-controls="navbarsES3Default" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsES3Default">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link file-input-button" href="#">e-akta megnyitása<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <!-- TODO ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="http://example.com"><span class="flag-icon flag-icon-us"> </span> English</a>
+          </li>
+        </ul-->
+      </div>
+
+    </nav>
+
+    <main role="main">
+
+      <div class="full">
+        <div class="container">
+          <div class="row clearfix">
+            <div class="col">
+              <h1 class="display-3 mt-5">es3 fájl megnyitása</h1>
+              <p>
+                e-Hiteles dokumentumok, e-akta megtekintése<br/>
+                regisztráció és telepítés nélkül, egyszerűen
+              </p>
+              <button type="button" class="file-input-button btn btn-primary btn-lg mt-3">Fájl megnyitása  &raquo;</button>
+              <input type="file" id="file-input" accept=".es3,.et3,.dosszie,.nsack,.adosszie" hidden>
+           </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="es3docs" class="container d-none">
+        <div class="d-flex align-items-center p-3 my-3 bg-warning text-dark rounded box-shadow">
+          <img class="dochead mr-3" src="img/folder_blk.svg" alt="">
+          <div class="lh-100">
+            <h5 id="es3_title" class="mb-0 lh-100">e-akta</h5>
+            <small id="es3_nfo_type">electronic dossier</small><br/>
+            <small id="es3_nfo_date">2021-03-02T08:20:36Z</small>
+          </div>
+        </div>
+
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+          <h6 class="border-bottom border-gray pb-2 mb-0">Tartalom</h6>
+          
+          <div id="docs">
+            <!-- from doctemplate -->
+          </div>
+          
+          <small class="files_summ_cnt d-block text-right">
+            <span id="files_summ">2</span> db
+          </small>
+
+        </div>
+        
+        <div id="es3sigs" class="my-3 p-3 pb-4 bg-white rounded box-shadow">
+          <h6 class="border-bottom border-gray pb-2 mb-0">Aláírások</h6>
+          
+          <div id="sigs">
+            <!-- from sigtemplate -->            
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 mb-5 mt-5">
+          <div class="col">
+            <h2>
+              Az .es3 fájl
+            </h2>
+            <p>
+              Ismertebb nevén <strong>e-akta</strong>, de gyakori még az e-hiteles dokumentum, elektronikus dosszié vagy az <i>"e-szignó fájl"</i> elnevezés is.
+            </p>
+            <p>
+              Az e-akta hasonlóan működik mint egy tömörített mappa (zip vagy rar), ami dokumentumokat és elektronikus aláírásokat tartalmaz.
+            </p>
+            <p>
+              Magyarországon a cégeljárásban, beszámolók készítésénél, illetékbefizetéskor és tulajdoni lapok esetén fordul elő leggyakrabban.
+            </p>
+          </div>
+
+          <div class="col">
+            <h2>
+              Ingyenes
+            </h2>
+            <p>
+              Az <b>es3.hu</b> egy ingyenes e-akta megjelenítő. Segítségével kibonthatja és elmentheti a megnyitott akta tartalmát.
+            </p>
+
+            <a name="biztonsag"></a>
+            <div class="alert alert-dark" role="alert">
+              <h4 class="alert-heading">Biztonság</h4>
+              Fontos tudnia, hogy az itt megnyitott dokumentumok sohasem hagyják el az Ön készülékét, 
+              <u>nem töltődnek fel távoli szerverekre</u> és az oldal <u>nem tárol</u> információt a megnyitott fájlokról.
+            </div>
+
+          </div>
+
+        </div>
+      </div>     
+
+    </main>
+
+    <footer class="footer bg-dark text-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 mb-3 mt-4">
+          <div class="col mt-3">
+            <div>
+              © Lifebu<strong style="color:#FF8000;">o</strong>y 2021 project<br>
+            </div>
+            <br>
+            <div>
+              Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <p>
+              <small>Az alkalmazás a dokumentumok sértetlenségéről, valamint az aláírások érvényességől nem tesz megállapítást. Azok tartalmáért a weblap üzemeltetője nem vállal felelősséget.</small>
+            </p>
+            <p style="text-align: right;">           
+              <a href="mailto:info@es3.hu" class="mailto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                </svg> info@es3.hu
+              </a>  
+            </p>
+          </div>
+      </div>
+    </footer>
+
+    <!-- templates --> 
+
+    <div id="doctemplate" class="doc_content d-none media text-muted pt-3">
+      <img src="img/pdf.svg" alt="" class="dochead rounded">
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="doctitle text-gray-dark">sample.pdf</strong>
+          <a class="docdl d-none" href="#">letöltés</a>
+          <strong class="docdl_enc d-none text-danger">titkosítva</strong>
+        </div>
+        <ul class="mb-0 pl-0 mt-1">
+          <li class="d-block text-gray-dark docmime">application/pdf</li>
+          <li class="d-block text-gray-dark docsize">4309 B</li>
+          <li class="d-block text-gray-dark doctime">2015-05-19T07:02:03Z</li>
+        </ul>              
+      </div>
+    </div>
+
+    <div id="docemptytemplate" class="d-none media text-muted pt-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="dochead rounded bi bi-emoji-frown" viewBox="0 0 16 16" alt="">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+      </svg>
+      <div class="media-body pb-3 mt-md-3 mt-1 mb-0 small lh-125">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="doctitle text-gray-dark">Nincsenek dokumentumok</strong>
+        </div>
+      </div>
+    </div>
+
+    <div id="sigtemplate" class="sig_content d-none media text-muted pt-3">
+      <svg height="48" width="48"  class="sighead rounded">
+        <circle cx="24" cy="18" r="14" stroke="#6c757d" stroke-width="2" fill="#ffc107" />
+      </svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="signername text-gray-dark">dr. Tesztelő Péterke</strong>
+        </div>
+        <ul class="mb-0 pl-0 mt-1">
+          <li class="sigtime d-block text-gray-dark">2015-05-19T07:02:03Z</li>
+        </ul>              
+      </div>
+    </div>
+
+    <!-- TODO: -->
+    <div data-test="cookie-notifications" class="d-none dPKQvV isNxTL">
+      <span data-test="cookie-caption" class="cphYuv">
+        Sütiket használunk, hogy a lehető legjobb online élményt nyújtsuk Önnek. A sütik tiltását, eltávolítást számítógépe böngészőjében bármikor beállíthatja.
+      </span>
+      <span data-test="cookie-close" class="dhzDTQ bgsiAM">
+        <button type="button" class="file-input-button btn btn-primary btn-sm">Elfogadom</button>
+      </span>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- script src="../../assets/js/vendor/holder.min.js"></script-->
+    <script src="js/es3.js"></script>
+  </body>
+</html>
